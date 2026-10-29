@@ -1,0 +1,402 @@
+
+body {
+    background-color: rgb(236, 236, 236);
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial;
+}
+
+h4,
+h5 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #8a1538;
+    margin: 0px;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: #8a1538;
+    width: 100%;
+    z-index: 10;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 2rem;
+}
+
+.logos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.RobleUP {
+    width: 200px;
+}
+
+.logo {
+    width: 110px;
+}
+.titulo {
+    text-align: center;
+}
+
+header h3 {
+    color: white;
+    font-size: 26px;
+    margin: 0;
+}
+
+header p {
+    color: #ba9357;
+    margin: 0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+nav li a:hover {
+    text-decoration: underline;
+    position: relative;
+    bottom: 2px;
+    color: #ba9357;
+}
+
+main {
+    max-width: 1200px;
+    width: 100%;
+    margin: 20px auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+section {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ba9357;
+    border-radius: 12px;
+    scroll-margin-top: 110px;
+}
+
+section:target {
+    border: 2px solid #8a1538;
+}
+
+section h4 {
+    font-size: 22px;
+    margin: 0 0 20px 0;
+}
+
+.contenido {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: start;
+    gap: 20px;
+}
+.formulario {
+    background-color: rgb(249, 243, 235);
+    padding: 20px;
+    border: 1px solid #ba9357;
+    border-radius: 12px;
+}
+
+.formulario h5 {
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+form input,
+form select {
+    width: 100%;
+    padding: 10px;
+    margin: 0 0 10px 0;
+    border: 1px solid #ba9357;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-family: Arial;
+    font-size: 15px;
+    background-color: white;
+}
+
+form input:focus,
+form select:focus {
+    border: 1px solid #8a1538;
+}
+
+button {
+    background-color: #8a1538;
+    color: beige;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: #6f102d;
+}
+
+.tutor-alumno {
+    background-color: #ba9357;
+    color:beige;
+    border: 1px solid #ba9357;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.tutor-alumno:hover {
+    background-color:#a17e4a;
+    border: 1px solid #a17e4a;
+}
+.lista {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: start;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.tarjeta {
+    background-color: rgb(249, 243, 235);
+    border-radius: 12px;
+    padding: 15px;
+}
+
+.tarjeta label {
+    font-size: 14px;
+    color: rgb(70, 28, 28);
+    margin: 6px 0;
+}
+
+.tarjeta p {
+    font-size: 14px;
+    color: rgb(57, 57, 57);
+    margin: 6px 0;
+}
+
+.tarjeta a {
+    color: #8a1538;
+}
+
+.nombre-tutor {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nombre-tutor h5 {
+    font-size: 14px;
+}
+
+.estatus {
+    font-size: 12px;
+    padding: 3px 10px;
+    border-radius: 20px;
+    background-color: white;
+    white-space: nowrap;
+}
+
+.estatus.tutoria {
+    background-color: rgb(227, 241, 230);
+    color: rgb(30, 107, 52);
+}
+
+.estatus.espera {
+    background-color: rgb(253, 243, 220);
+    color: rgb(57, 57, 57);
+}
+
+.estatus.baja {
+    background-color: rgb(238, 238, 238);
+    color: rgb(102, 102, 102);
+}
+
+.espera {
+    background-color: rgb(253, 243, 220);
+    color: rgb(0, 138, 74);
+}
+
+.baja {
+    background-color: rgb(238, 238, 238);
+    color: rgb(102, 102, 102);
+}
+
+.texto-alta {
+    color: rgb(198, 40, 40);
+    font-weight: bold;
+}
+
+.correo-grupos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.correo-grupos p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.correo-grupos a {
+    background-color: #8a1538;
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.correo-grupos a:hover {
+    background-color: #6f102d;
+}
+
+footer {
+    background-color: #8a1538;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 40px;
+    margin-top: 20px;
+}
+
+.logo-footer {
+    width: 110px;
+}
+
+.footer-info {
+    text-align: center;
+}
+
+footer h5 {
+    color: beige;
+    font-size: 16px;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.footer-insta {
+    text-align: right;
+}
+
+footer a {
+    color: #ba9357;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 900px) {
+
+    .navbar {
+        flex-direction: column;
+        padding: 15px 20px;
+    }
+
+    .RobleUP {
+        width: 160px;
+    }
+
+    .logo {
+        width: 90px;
+    }
+
+    main {
+        padding: 0 20px;
+    }
+
+    section {
+        scroll-margin-top: 210px;
+    }
+
+    .contenido {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .lista {
+        grid-template-columns: 1fr;
+    }
+     footer {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .footer-insta {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .barra {
+        padding: 15px 10px;
+        gap: 10px;
+    }
+
+    header h3 {
+        font-size: 20px;
+    }
+
+    .logos {
+        gap: 15px;
+    }
+
+    .RobleUP {
+        width: 135px;
+    }
+
+    .logo {
+        width: 80px;
+    }
+
+    main {
+        padding: 0 10px;
+    }
+
+    section {
+        padding: 15px;
+        scroll-margin-top: 180px;
+    }
+}
