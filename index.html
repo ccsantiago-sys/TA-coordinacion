@@ -62,6 +62,7 @@
                             <option value="" selected disabled hidden>Selecciona el área</option>
                             <option value="ingenieria">Ingeniería</option>
                             <option value="empresarial">Empresarial</option>
+                            <option value="humanidades">Humanidades</option>
                         </select>
 
                         <label for="tutor-tipo">Tipo de profesor:</label>
@@ -82,6 +83,23 @@
                     <option value="Humanidades">Humanidades</option>
         </section>  -->
                 <ul class="lista">
+
+                      <li class="tarjeta">
+                        <div class="nombre-tutor">
+                            <h5>Ing. Carlos Ruiz</h5>
+                        </div>
+                        <p>Materias: Termodinámica, Física</p>
+                        <p>Horario: Mar y Jue 16:00 a 17:00</p>
+                        <p>Área: Ingeniería | Tipo: Asignatura</p>
+                        <p>Cupo: 2 alumnos</p>
+                        <h5>Alumnos:</h5>
+                        <p>Nombre del alumno</p>
+                        <form>
+                            <label for="agregar-alumno">Agregar alumnos:</label>
+                            <input type="text" id="agregar-alumno" name="agregar-alumno" placeholder="Nombre del alumno">
+                            <button class="tutor-alumno" type="submit">Añadir alumno</button>
+                        </form>
+                    </li>
                     <li class="tarjeta">
                         <div class="nombre-tutor">
                             <h5>Mtra. Laura Gómez</h5>
@@ -162,25 +180,7 @@
                             <option value="m11">Microeconomía</option>
                             <option value="m12">Otra</option>
                         </select>
-
                         </form>
-                            <button class="tutor-alumno" type="submit">Añadir alumno</button>
-                        </form>
-                    </li>
-
-                    <li class="tarjeta">
-                        <div class="nombre-tutor">
-                            <h5>Ing. Carlos Ruiz</h5>
-                        </div>
-                        <p>Materias: Termodinámica, Física</p>
-                        <p>Horario: Mar y Jue 16:00 a 17:00</p>
-                        <p>Área: Ingeniería | Tipo: Asignatura</p>
-                        <p>Cupo: 2 alumnos</p>
-                        <h5>Alumnos:</h5>
-                        <p>Nombre del alumno</p>
-                        <form>
-                            <label for="agregar-alumno">Agregar alumnos:</label>
-                            <input type="text" id="agregar-alumno" name="agregar-alumno" placeholder="Nombre del alumno">
                             <button class="tutor-alumno" type="submit">Añadir alumno</button>
                         </form>
                     </li>
@@ -256,6 +256,14 @@
                             <option value="m10">Algebra Matricial</option>
                             <option value="m11">Microeconomía</option>
                             <option value="m12">Otra</option>
+                        </select>
+
+                        <label for="alumno-semestre">Nivel de urgencia:</label>
+                        <select name="alumno-semestre" id="alumno-semestre" required>
+                            <option value="" selected disabled hidden>Selecciona una opción</option>
+                            <option value="baja">Baja</option>
+                            <option value="media">Media</option>
+                            <option value="alta">Alta</option>
                         </select>
                         <button type="submit">Guardar alumno</button>
 
