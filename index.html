@@ -23,7 +23,7 @@
             <nav>
                 <ul class="nav-links">
                     <li><a href="#Tutores">Tutores</a></li>
-                    <li><a href="#Alumnos">Alumnos</a></li>
+                    <li><a href="#Alumnos">Alumnos en lista de espera</a></li>
                 </ul>
             </nav>
         </div>
@@ -62,6 +62,7 @@
                             <option value="" selected disabled hidden>Selecciona el área</option>
                             <option value="ingenieria">Ingeniería</option>
                             <option value="empresarial">Empresarial</option>
+                            <option value="humanidades">Humanidades</option>
                         </select>
 
                         <label for="tutor-tipo">Tipo de profesor:</label>
@@ -73,26 +74,17 @@
                         <button type="submit">Guardar tutor</button>
                     </form>
                 </div>
-
+         <!-- <section id="FiltroTut" class="filtroTut">
+                    <label for="filtro">Filtro</label>
+                    <select name="filtro-area" id="filtro-area">Área</select>
+                    <option value="" selected disabled hidden>Área</option>
+                    <option value="Ingeniería">Ingeniería</option>
+                    <option value="Empresariales">Empresariales</option>
+                    <option value="Humanidades">Humanidades</option>
+        </section>  -->
                 <ul class="lista">
-                    <li class="tarjeta">
-                        <div class="nombre-tutor">
-                            <h5>Mtra. Laura Gómez</h5>
-                        </div>
-                        <p>Materias: Cálculo diferencial, Cálculo vectorial</p>
-                        <p>Horario: Lun y Mié 10:00 a 12:00</p>
-                        <p>Área: Ingeniería | Tipo: Planta</p>
-                        <p>Cupo: 4 alumnos</p>
-                        <h5>Alumnos:</h5>
-                        <p>Diego Ramírez</p>
-                        <form>
-                            <label for="agregar-alumno">Agregar alumnos:</label>
-                            <input type="text" id="agregar-alumno" name="agregar-alumno" placeholder="Nombre del alumno">
-                            <button class="tutor-alumno" type="submit">Añadir alumno</button>
-                        </form>
-                    </li>
 
-                    <li class="tarjeta">
+                      <li class="tarjeta">
                         <div class="nombre-tutor">
                             <h5>Ing. Carlos Ruiz</h5>
                         </div>
@@ -108,12 +100,96 @@
                             <button class="tutor-alumno" type="submit">Añadir alumno</button>
                         </form>
                     </li>
+                    <li class="tarjeta">
+                        <div class="nombre-tutor">
+                            <h5>Mtra. Laura Gómez</h5>
+                        </div>
+                        <p>Materias: Cálculo diferencial, Cálculo vectorial</p>
+                        <p>Horario: Lun y Mié 10:00 a 12:00</p>
+                        <p>Área: Ingeniería | Tipo: Planta</p>
+                        <p>Cupo: 4 alumnos</p>
+                        <h5>Alumnos:</h5>
+                        <p>Fernanda González</p>
+                        <button class="mas-alumno">+</button>
+                        <form>
+                            <label for="agregar-alumno">Agregar alumno:</label>
+                            <form>
+                        <label for="alumno-nombre">Nombre:</label>
+                        <input type="text" id="alumno-nombre" name="alumno-nombre" placeholder="Nombre completo" required>
+                        <label for="alumno-carrera">Carrera:</label>
+                        <select name="alumno-carrera" id="alumno-carrera" required>
+                            <option value="" selected disabled hidden>Selecciona la carrera</option>
+                            <option value="c1">Ingeniería en Innovación y Diseño</option>
+                            <option value="c2">Ingeniería en Sistemas y Gráficas Computacionales</option>
+                            <option value="c3">Ingeniería Industrial e Innovación de Negocios</option>
+                            <option value="c4">Ingeniería Mecatrónica</option>
+                            <option value="c5">Ingeniería Civil</option>
+                            <option value="c6">Ingeniería en Animación Digital</option>
+                            <option value="c7">Arquitectura</option>
+                            <option value="c8">Producción y Creación Audiovisual</option>
+                            <option value="c9">Comunicación y opinión pública</option>
+                            <option value="c10">Publicidad y relaciones públicas</option>
+                            <option value="c11">Administración y Finanzas</option>
+                            <option value="c12">Mercadotecnia y Estrategia de Datos</option>
+                            <option value="c13">Administración y Negocios Internacionales</option>
+                            <option value="c14">Administración y Dirección</option>
+                            <option value="c15">Administración y Dirección de Empresas Familiares</option>
+                            <option value="c16">Administración del Talento</option>
+                            <option value="c17">Contaduría</option>
+                            <option value="c18">Dirección de Negocios Gastronómicos</option>
+                            <option value="c19">ESDAI</option>
+                            <option value="c20">Pedagogía</option>
+                            <option value="c21">Psicopedagogía</option>
+                            <option value="c22">Psicología</option>
+                            <option value="c23">Derecho</option>
+                        </select>
+
+                        <label for="alumno-semestre">Semestre:</label>
+                        <select name="alumno-semestre" id="alumno-semestre" required>
+                            <option value="" selected disabled hidden>Selecciona el semestre</option>
+                            <option value="1">1°</option>
+                            <option value="2">2°</option>
+                            <option value="3">3°</option>
+                            <option value="4">4°</option>
+                            <option value="5">5°</option>
+                            <option value="6">6°</option>
+                            <option value="7">7°</option>
+                            <option value="8">8°</option>
+                            <option value="9">9°</option>
+                            <option value="10">10°</option>
+                        </select>
+
+                        <label for="Calificación">Calificación</label>
+                        <input type="number">
+
+                        <label for="alumno-correo">Correo:</label>
+                        <input type="email" id="alumno-correo" name="alumno-correo" placeholder="Correo institucional" required>
+                        <label for="alumno-materia">Materia de tutoría:</label>
+                        <select name="alumno-materia" id="alumno-materia" required>
+                            <option value="m0" selected disabled hidden>Selecciona la materia</option>
+                            <option value="m1">Cálculo diferencial</option>
+                            <option value="m2">Cálculo vectorial</option>
+                            <option value="m3">Termodinámica</option>
+                            <option value="m4">Química</option>
+                            <option value="m5">Física</option>
+                            <option value="m6">Circuitos eléctricos</option>
+                            <option value="m7">Probabilidad y Estadística</option>
+                            <option value="m8">Contabilidad Financiera</option>
+                            <option value="m9">Análisis Financiero</option>
+                            <option value="m10">Algebra Matricial</option>
+                            <option value="m11">Microeconomía</option>
+                            <option value="m12">Otra</option>
+                        </select>
+                        </form>
+                            <button class="tutor-alumno" type="submit">Añadir alumno</button>
+                        </form>
+                    </li>
 
                 </ul>
             </div>
         </section>
         <section id="Alumnos">
-            <h4>Alumnos</h4>
+            <h4>Alumnos lista de espera</h4>
             <div class="contenido">
                 <div class="formulario">
                     <h5>Agregar alumno</h5>
@@ -181,6 +257,14 @@
                             <option value="m11">Microeconomía</option>
                             <option value="m12">Otra</option>
                         </select>
+
+                        <label for="alumno-semestre">Nivel de urgencia:</label>
+                        <select name="alumno-semestre" id="alumno-semestre" required>
+                            <option value="" selected disabled hidden>Selecciona una opción</option>
+                            <option value="baja">Baja</option>
+                            <option value="media">Media</option>
+                            <option value="alta">Alta</option>
+                        </select>
                         <button type="submit">Guardar alumno</button>
 
                     </form>
@@ -197,24 +281,7 @@
                             <p>Administración y Finanzas</p>
                             <p>5° semestre</p>
                             <p>Tutoría: Análisis financiero</p>
-                            <p class="estatus tutoria">En tutoría</p>
-                            <form>
-                                <label for="alumno-estatus">Estatus:</label>
-                                    <select name="alumno-estatus" id="alumno-estatus" required>
-                                        <option value="" selected disabled hidden>Selecciona el estatus</option>
-                                        <option value="tutoria">En tutoría</option>
-                                        <option value="espera">Lista de espera</option>
-                                        <option value="baja">Baja</option>
-                                    </select>
-                                <label for="alumno-urgencia">Nivel de urgencia (solo lista de espera):</label>
-                                    <select name="alumno-urgencia" id="alumno-urgencia">
-                                        <option value="no-aplica">No aplica</option>
-                                        <option value="alta">Alta</option>
-                                        <option value="media">Media</option>
-                                        <option value="baja">Baja</option>
-                                    </select>
-                                    <button type="submit">Guardar cambios</button>
-                            </form>
+                            <p class="estatus espera">Lista de espera | <span class="texto-media">Media</span></p>
                         </li>
 
                         <li class="tarjeta urgencia-alta">
@@ -225,51 +292,17 @@
                             <p>Ingeniería Industrial e Innovación de Negocios</p>
                             <p>3° semestre</p>
                             <p>Tutoría: Física</p>
-                            <p class="estatus espera">Lista de espera | <span class="texto-alta">Alta</span></p>
-                            <form>
-                                <label for="alumno-estatus">Estatus:</label>
-                                    <select name="alumno-estatus" id="alumno-estatus" required>
-                                        <option value="" selected disabled hidden>Selecciona el estatus</option>
-                                        <option value="tutoria">En tutoría</option>
-                                        <option value="espera">Lista de espera</option>
-                                        <option value="baja">Baja</option>
-                                    </select>
-                                <label for="alumno-urgencia">Nivel de urgencia (solo lista de espera):</label>
-                                    <select name="alumno-urgencia" id="alumno-urgencia">
-                                        <option value="no-aplica">No aplica</option>
-                                        <option value="alta">Alta</option>
-                                        <option value="media">Media</option>
-                                        <option value="baja">Baja</option>
-                                    </select>
-                                    <button type="submit">Guardar cambios</button>
-                            </form>   
+                            <p class="estatus espera">Lista de espera | <span class="texto-alta">Alta</span></p>  
                         </li>
                         <li class="tarjeta">
                             <div class="tarjeta-encabezado">
-                                <h5>Sofía Méndez</h5>
+                                <h5>Sofía García</h5>
                             </div>
                             <p><a href="mailto:0281098@ejemplo.com">0281098@up.edu.mx</a></p>
                             <p>Ingeniería Civil</p>
                             <p>2° semestre</p>
                             <p>Tutoría: Química</p>
-                            <p class="estatus baja">Baja</p> 
-                            <form>
-                                <label for="alumno-estatus">Estatus:</label>
-                                    <select name="alumno-estatus" id="alumno-estatus" required>
-                                        <option value="" selected disabled hidden>Selecciona el estatus</option>
-                                        <option value="tutoria">En tutoría</option>
-                                        <option value="espera">Lista de espera</option>
-                                        <option value="baja">Baja</option>
-                                    </select>
-                                <label for="alumno-urgencia">Nivel de urgencia (solo lista de espera):</label>
-                                    <select name="alumno-urgencia" id="alumno-urgencia">
-                                        <option value="no-aplica">No aplica</option>
-                                        <option value="alta">Alta</option>
-                                        <option value="media">Media</option>
-                                        <option value="baja">Baja</option>
-                                    </select>
-                                    <button type="submit">Guardar cambios</button>
-                            </form>
+                            <p class="estatus espera">Lista de espera | <span class="texto-baja">Baja</span></p>
                         </li>
                     </ul>
                 </div>

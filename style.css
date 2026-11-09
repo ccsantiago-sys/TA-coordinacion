@@ -163,6 +163,15 @@ button:hover {
     background-color: #6f102d;
 }
 
+.mas-alumno{
+    background-color: #ba9357;
+    color:beige;
+    padding: 10px 10px;
+}
+
+.mas-alumno:hover{
+    background-color:#a17e4a;
+}
 .tutor-alumno {
     background-color: #ba9357;
     color:beige;
@@ -175,6 +184,9 @@ button:hover {
 .tutor-alumno:hover {
     background-color:#a17e4a;
     border: 1px solid #a17e4a;
+}
+.filtroTut{
+    color: black;
 }
 .lista {
     list-style: none;
@@ -194,13 +206,13 @@ button:hover {
 
 .tarjeta label {
     font-size: 14px;
-    color: rgb(70, 28, 28);
+    color: rgb(28, 36, 70);
     margin: 6px 0;
 }
 
 .tarjeta p {
     font-size: 14px;
-    color: rgb(57, 57, 57);
+    color: rgb(44, 5, 5);
     margin: 6px 0;
 }
 
@@ -253,6 +265,16 @@ button:hover {
 
 .texto-alta {
     color: rgb(198, 40, 40);
+    font-weight: bold;
+}
+
+.texto-media {
+    color:rgb(212, 183, 19);
+    font-weight: bold;
+}
+
+.texto-baja {
+    color:rgb(117, 126, 122);
     font-weight: bold;
 }
 
