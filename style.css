@@ -230,7 +230,32 @@ button:hover {
     font-size: 14px;
 }
 
-.estatus {
+.tarjeta-encabezado h5{
+    display: inline;
+}
+
+.tarjeta-encabezado span{
+    color:#580d23;
+    font-weight:bold;
+}
+
+.mandar-correo {
+    color:#392911;
+    background-color: #ba9357;
+    color: beige;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.mandar-correo:hover {
+    background-color: #a17e4a;
+}
+
+
+/* .estatus {
     font-size: 12px;
     padding: 3px 10px;
     border-radius: 20px;
@@ -276,7 +301,7 @@ button:hover {
 .texto-baja {
     color:rgb(117, 126, 122);
     font-weight: bold;
-}
+} */
 
 .correo-grupos {
     display: flex;

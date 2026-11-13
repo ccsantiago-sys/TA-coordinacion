@@ -40,8 +40,8 @@
                         <input type="text" id="tutor-nombre" name="tutor-nombre" placeholder="Nombre completo" required>
                         <label for="tutor-materias">Materia(s) que imparte:</label>
                         <input type="text" id="tutor-materias" name="tutor-materias" placeholder="Separar las materias con comas" required>
-                        <label for="tutor-horario">Horario de atención:</label>
-                        <input type="text" id="tutor-horario" name="tutor-horario" placeholder="Ej. Lun y Mié 10:00 a 12:00" required>
+                        <!-- <label for="tutor-horario">Horario de atención:</label>
+                        <input type="text" id="tutor-horario" name="tutor-horario" placeholder="Ej. Lun y Mié 10:00 a 12:00" required> -->
                         <label for="tutor-cupo">Número de alumnos que puede atender:</label>
                         <select name="tutor-cupo" id="tutor-cupo" required>
                             <option value="" selected disabled hidden>Selecciona</option>
@@ -63,6 +63,7 @@
                             <option value="ingenieria">Ingeniería</option>
                             <option value="empresarial">Empresarial</option>
                             <option value="humanidades">Humanidades</option>
+                            <option value="Idiomas">Idiomas</option>
                         </select>
 
                         <label for="tutor-tipo">Tipo de profesor:</label>
@@ -258,12 +259,12 @@
                             <option value="m12">Otra</option>
                         </select>
 
-                        <label for="alumno-semestre">Nivel de urgencia:</label>
-                        <select name="alumno-semestre" id="alumno-semestre" required>
-                            <option value="" selected disabled hidden>Selecciona una opción</option>
+                        <!-- <label for="alumno-semestre">Nivel de urgencia:</label> -->
+                        <!-- <select name="alumno-semestre" id="alumno-semestre" required> -->
+                            <!-- <option value="" selected disabled hidden>Selecciona una opción</option>
                             <option value="baja">Baja</option>
                             <option value="media">Media</option>
-                            <option value="alta">Alta</option>
+                            <option value="alta">Alta</option> -->
                         </select>
                         <button type="submit">Guardar alumno</button>
 
@@ -275,34 +276,35 @@
                     <ul class="lista">
                         <li class="tarjeta">
                             <div class="tarjeta-encabezado">
-                                <h5>Diego Ramírez</h5>
+                            <span>1.- </span><h5>Diego Ramírez</h5>
                             </div>
                             <p><a href="mailto:0304576@ejemplo.com">0304576@up.edu.mx</a></p>
                             <p>Administración y Finanzas</p>
                             <p>5° semestre</p>
                             <p>Tutoría: Análisis financiero</p>
-                            <p class="estatus espera">Lista de espera | <span class="texto-media">Media</span></p>
+                            <!-- <p class="estatus espera">Lista de espera | <span class="texto-media">Media</span></p> -->
                         </li>
 
                         <li class="tarjeta urgencia-alta">
                             <div class="tarjeta-encabezado">
-                                <h5>Ana Torres</h5>
+                            <span>2.- </span><h5>Ana Torres</h5>
                             </div>
                             <p><a href="mailto:0294576@ejemplo.com">0294576@up.edu.mx</a></p>
                             <p>Ingeniería Industrial e Innovación de Negocios</p>
                             <p>3° semestre</p>
                             <p>Tutoría: Física</p>
-                            <p class="estatus espera">Lista de espera | <span class="texto-alta">Alta</span></p>  
+                            <!-- <p class="estatus espera">Lista de espera | <span class="texto-alta">Alta</span></p>   -->
                         </li>
                         <li class="tarjeta">
                             <div class="tarjeta-encabezado">
-                                <h5>Sofía García</h5>
+                            <span>3.- </span><h5>Sofía García</h5><button class="mandar-correo">Mandar correo</button>
                             </div>
+                            <!-- <button class="mandar-correo">Mandar correo</button> -->
                             <p><a href="mailto:0281098@ejemplo.com">0281098@up.edu.mx</a></p>
                             <p>Ingeniería Civil</p>
                             <p>2° semestre</p>
                             <p>Tutoría: Química</p>
-                            <p class="estatus espera">Lista de espera | <span class="texto-baja">Baja</span></p>
+                            <!-- <p class="estatus espera">Lista de espera | <span class="texto-baja">Baja</span></p> -->
                         </li>
                     </ul>
                 </div>
